@@ -41,7 +41,7 @@
             QUERYNO 29
 
 
-        END-EXEC.
+           END-EXEC.
 		
 	  2000-INITIALIZE-PARA.
 	   EXEC SQL
@@ -49,7 +49,7 @@
             INTO    :CPN_ROG,
                     :CPN_CPN_ADJ_IND
 
-       END-EXEC.
+            END-EXEC.
 
       
 
