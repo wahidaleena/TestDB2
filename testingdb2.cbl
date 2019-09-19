@@ -43,15 +43,6 @@
 
            END-EXEC.
 
-       2000-INITIALIZE-PARA.
-       EXEC SQL
-            FETCH    COPYUPC_SSCOUPON
-            INTO    :CPN_ROG,
-                    :CPN_CPN_ADJ_IND
-
-            END-EXEC.
-
-
 
       ******************************************************************
       * TABLE INSERT                                                   *
