@@ -1,17 +1,17 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID.    TEST DB2.
+       PROGRAM-ID.    TESTDB2.
       *SECURITY.      OPERACTION, REVISION, AND DISTRIBUTION
       *            OF THIS PROGRAM BY WRITTEN AUTHORIZATION
       *            OF THE ABOVE INSTALLACTION ONLY.
       *DATE-WRITTEN.  09/12/19.
       *DATE-COMPLETED.
       **************************CC109**********************************
-       
+
        PROCEDURE DIVISION.
 
        0000-INITIALIZE-PARA.
 
-          
+
         EXEC SQL
             SELECT   RETAIL_SECT,
                      RING
@@ -28,8 +28,8 @@
 
         END-EXEC.
 
-      1000-INITIALIZE-PARA.
-	   EXEC SQL
+       1000-INITIALIZE-PARA.
+       EXEC SQL
             SELECT   STATUS_RUPC
             INTO    :X-STATUS-RUPC
             FROM     X
@@ -42,16 +42,7 @@
 
 
            END-EXEC.
-		
-	  2000-INITIALIZE-PARA.
-	   EXEC SQL
-            FETCH    COPYUPC_SSCOUPON
-            INTO    :CPN_ROG,
-                    :CPN_CPN_ADJ_IND
 
-            END-EXEC.
-
-      
 
       ******************************************************************
       * TABLE INSERT                                                   *
@@ -78,12 +69,12 @@
             QUERYNO 35
 
        END-EXEC.
-       
+
        6000-FINAL-COUNT.
-          CLOSE INFILE
-                OUT.
-          DISPLAY "-----------------------------------------------------".
+        CLOSE INFILE
+              OUT.
+        DISPLAY "-----------------------------------------------------".
 
-      
 
-      
+
+
